@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script type="text/javascript">
+
+        function changeall(){
+        var imgs=document.getElementById('album').getElementsByTagName('img');
+        for(var i=0, img; img=imgs[i++];){
+            img.style.borderColor='#AE0071';
+        }
+        }
+
+        function inputwords(x){
+            var y=document.getElementById(x).value;
+            document.getElementById(x).value=y.toLowerCase();
+            if(y=='jon'){
+                document.getElementById('cat1').style.borderColor='#AE0071';
+            }
+            if(y=='tyrion'){
+                document.getElementById('cat2').style.borderColor='#AE0071';
+            }
+            if(y=='sansa'){
+                document.getElementById('cat3').style.borderColor='#AE0071';
+            }
+            if(y=='arya'){
+                document.getElementById('cat4').style.borderColor='#AE0071';
+            }
+            if(y=='jaime'){
+                document.getElementById('cat5').style.borderColor='#AE0071';
+            }
+            if(y=='snow'){
+                document.getElementById('cat1').style.borderColor='#AE0071';
+            }
+            if(y=='lannister'){
+                document.getElementById('cat2').style.borderColor='#AE0071';
+                document.getElementById('cat5').style.borderColor='#AE0071';
+            }
+            if(y=='stark'){
+                document.getElementById('cat3').style.borderColor='#AE0071';
+                document.getElementById('cat4').style.borderColor='#AE0071';
+            }
+        }
+
+
+        </script>
+        <title>Feeding Cats</title>
+    </head>
+    <body>
+        <div id="container">
+            <div id="page">
+                <div id="menu" class="col">
+                    <ul>
+                        <h1>Feed Me</h1>
+                        <h2>請餵食</h2>
+                        <input type="radio" name="feed_one" onclick="changeall()">All<br>
+                        <input type="radio" name="feed_one" onclick="document.getElementById('cat1').style.borderColor='#AE0071'" value="jon" class="snow">Jon<br>
+                        <input type="radio" name="feed_one" onclick="document.getElementById('cat2').style.borderColor='#AE0071'" value="tyrion" class="lannister">Tyrion<br>
+                        <input type="radio" name="feed_one" onclick="document.getElementById('cat3').style.borderColor='#AE0071'" value="sansa" class="stark">Sansa<br>
+                        <input type="radio" name="feed_one" onclick="document.getElementById('cat4').style.borderColor='#AE0071'" value="arya" class="stark">Arya<br>
+                        <input type="radio" name="feed_one" onclick="document.getElementById('cat5').style.borderColor='#AE0071'" value="jaime" class="lannister">Jaime<br>
+
+                        <h2>餵食特定品種喵喵</h2>
+			請輸入他的姓氏/名字
+                        <input type="text" onchange="inputwords(this.id)" id="feed_breed">
+                    </ul>
+                </div>
+                <div id="album" class="col">
+                    <h1>Cat Album</h1>
+                    <div id="allcats">
+                    <div class="cat">
+                        <a href="#" onclick="document.getElementById('cat1').src='cat_pics/cat1_inverse.jpg'">
+                        <img id="cat1" src="cat_pics/cat1.jpg" height="200px"/></a>
+                        Jon /
+                        <span>Snow</span>
+                    </div>
+
+                    <div class="cat">
+                        <a href="#" onclick="document.getElementById('cat2').src='cat_pics/cat2_inverse.jpg'">
+                        <img id="cat2" src="cat_pics/cat2.jpg" height="200px"/></a>
+                        Tyrion /
+                        <span>Lannister</span>
+                    </div>
+
+                    <div class="cat">
+                        <a href="#" onclick="document.getElementById('cat3').src='cat_pics/cat3_inverse.jpg'">
+                        <img id="cat3" src="cat_pics/cat3.jpg" height="200px"/></a>
+                        Sansa /
+                        <span>Stark</span>
+                    </div>
+
+                    <div class="cat">
+                        <a href="#" onclick="document.getElementById('cat4').src='cat_pics/cat4_inverse.jpg'">
+                        <img id="cat4" src="cat_pics/cat4.jpg" height="200px"/></a>
+                        Arya /
+                        <span>Stark</span>
+                    </div>
+
+                    <div class="cat">
+                        <a href="#" onclick="document.getElementById('cat5').src='cat_pics/cat5_inverse.jpg'">
+                        <img id="cat5" src="cat_pics/cat5.jpg" height="200px"/></a>
+                        Jaime /
+                        <span>Lannister</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
