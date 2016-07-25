@@ -1,6 +1,4 @@
-html{
-	font-family:'Helvetica';
-    font-size: 20px;
+ize: 20px;
     line-height: 1.4em;
 }
 
@@ -63,3 +61,33 @@ html{
     filter: blur(1px);
     filter: none;
 }
+
+
+.img-box {
+  /* 排版 */
+  display: inline-block;
+  margin: 0.2em;
+  padding: 2em;
+
+  width: 15vw;
+  background-color: #424242;
+  border-radius: 0.5em;
+}
+img {
+  /* rwd img*/
+  max-width: 100%;
+  height: auto;
+  display:block;
+
+  border-radius: 0.5em;
+}
+.btn {
+  border-radius: 0.5em;
+  background-color: #111111;
+  color: #fff;
+
+  display: inline-block;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
