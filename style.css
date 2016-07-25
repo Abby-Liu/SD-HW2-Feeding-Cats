@@ -1,4 +1,6 @@
-ize: 20px;
+html{
+	font-family:'Helvetica';
+    font-size: 20px;
     line-height: 1.4em;
 }
 
@@ -44,7 +46,8 @@ ize: 20px;
 .inverse_cat{
     display: none;
 }
-.cat img{
+img{
+    max-width: 100%;
     display: block;
     margin: 0 auto;
     border-radius: 10%;
@@ -55,7 +58,7 @@ ize: 20px;
     -o-transition: opacity 0.3s ease-in-out;
     transition: opacity 0.3s ease-in-out;
 }
-.cat img:nth-of-type(1):hover{
+img:nth-of-type(1):hover{
     opacity: 0.5;
     -webkit-filter: blur(1px);
     filter: blur(1px);
@@ -73,14 +76,7 @@ ize: 20px;
   background-color: #424242;
   border-radius: 0.5em;
 }
-img {
-  /* rwd img*/
-  max-width: 100%;
-  height: auto;
-  display:block;
 
-  border-radius: 0.5em;
-}
 .btn {
   border-radius: 0.5em;
   background-color: #111111;
@@ -90,4 +86,3 @@ img {
   border: 1px solid transparent;
   cursor: pointer;
 }
-

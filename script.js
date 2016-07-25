@@ -1,5 +1,6 @@
-
-n catdown(obj) {
+// 按壓貓咪
+//**************************************
+function catdown(obj) {
     obj.src = obj.id + "_inverse.jpg";
 }
 function catup(obj) {
@@ -118,4 +119,3 @@ function inputwords(x){
     }
 }
 ***/
-
